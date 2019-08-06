@@ -12,7 +12,14 @@
 ### 步骤二 : 通过vue命令创建vue项目
 ### 选定路径，新建vue项目, 可以在随便一个目录创建文件夹, 然后cd 到文件目录
 ### vue init webpack  ”项目名称“  (在该目录下进入cmd 命令行, 执行命令创建一个vue项目.)
-### 注意点: 在执行创建项目命令时遇到: User ESLint to lint your code , Set up unit tests , Setup e2e tests with nighwatch ? 都选择no, 别选这yes. 如果选择yes , 就是严格的格式, 在往后编写项目的时候会出现许多警告
+### 注意点: 在执行创建项目命令时遇到:
+```
+...
+User ESLint to lint your code ? no 
+Set up unit tests ? no
+Setup e2e tests with nighwatch ? no
+```
+都选择no, 别选这yes. 如果选择yes , 就是严格的格式, 在往后编写项目的时候会出现许多警告
 
 ### 现在已经创建好了，那就让项目先安装下依赖再运行一下，会出现下面的页面，操作指令是：
 ### (1) cnpm install 
