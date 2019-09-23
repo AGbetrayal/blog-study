@@ -42,6 +42,7 @@ KahaDB的目录会在你启动MQ后自动创建（使用了KAhaDB作为存储器
            <jdbcPersistenceAdapter dataSource="#mysql-ds" createTablesOnStartup="true" />
 </persistenceAdapter>
 ```
+### 其中createTablesOnStartup="true" 是自动创建表的意思(当activemq数据库中没有对于表的时候会自动创建表), 第一次建议为true,以后可以设置为false
 ### 接着在标签beans 中添加一下代码(以下的是我的配置,自行修改)
 ```
  <bean id="mysql-ds" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
