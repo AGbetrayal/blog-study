@@ -32,3 +32,12 @@ JDBC With Journal方式克服了JDBC Store的不足，使用快速的缓存写�
 ### 启动正常就成功了
 
 ## 注意记得在操作系统中别带"_", 会报错
+
+## JDBC Store和JDBC Message Store with ActiveMQ Journal的区别
+```
+1.JDBC with journal的性能优于jdbc
+2.JDBC用于master/slave模式的数据库分享
+3.JDBC with journal不能用于master/slave模式
+4.一般情况下，推荐使用jdbc with journal
+```
+
